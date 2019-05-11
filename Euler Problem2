@@ -1,0 +1,13 @@
+#t is a temporary variable and the series should start with 1,2 and so on
+a = 1
+b = 2
+s = 0
+s += b
+t = 0
+while(t < 4000000):
+    t = a + b
+    if t % 2 == 0:
+        s += t
+    a = b
+    b = t
+print(s)
